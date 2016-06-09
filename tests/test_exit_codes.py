@@ -19,10 +19,3 @@ def test_exit_code_version():
 
     except subprocess.CalledProcessError:
         assert(False)
-
-def test_exit_code_empty_input():
-	"""Ensure that calling with empty input returns an exit code of 0."""
-	try:
-		subprocess.check_output("proselint")
-	except subprocess.CalledProcessError:
-		assert(False)
