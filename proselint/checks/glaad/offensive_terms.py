@@ -28,11 +28,14 @@ def check(text):
         "fag",
         "faggot",
         "dyke",
-        "homo",
         "sodomite",
         "homosexual agenda",
         "gay agenda",
-        "transvestite"
+        "transvestite",
+        "homosexual lifestyle",
+        "gay lifestyle"
+        # homo - may create false positives without additional context
+        # FIXME use topic detetor to decide whether "homo" is offensive
     ]
 
-    return existence_check(text, list, err, msg, join=True, ignore_case=True)
+    return existence_check(text, list, err, msg, join=True, ignore_case=False)

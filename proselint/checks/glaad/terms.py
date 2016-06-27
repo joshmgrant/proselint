@@ -32,8 +32,7 @@ def check(text):
         ["gay people",            ["homosexual people"]],
         ["gay couple",            ["homosexual couple"]],
         ["sexual orientation",           ["sexual preference"]],
-        ["gay lives",            ["homosexual lifestyle", "gay lifestyle"]],
-        ["out",            ["admitted homosexual", "avowed homosexual"]],
+        ["openly gay",    ["admitted homosexual", "avowed homosexual"]],
         ["equal rights",            ["special rights"]]
         ]
 
