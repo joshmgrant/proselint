@@ -37,3 +37,25 @@ class TestCheck(Check):
             "It happened at 7 a.m.") == []
         assert chk.check_spacing(
             "It happened at 7a.m.") != []
+
+    def test_smoke_check_midnight_noon(self):
+        """Basic smoke test for the function
+        dates_times.am_pm.midnight_noon.
+        """
+        assert chk.check_midnight_noon(
+            "Basic smoke phrase without issues.") == []
+        assert chk.check_midnight_noon(
+            "It happened at noon.") == []
+        assert chk.check_midnight_noon(
+            "It happened at 12 a.m.") != []
+
+    def test_smoke_check_redundancy(self):
+        """Basic smoke test for the function
+        dates_times.am_pm.check_redundancy.
+        """
+        assert chk.check_redundancy(
+            "Basic smoke phrase without issues.") == []
+        assert chk.check_redundancy(
+            "It happened at 7 a.m.") == []
+        assert chk.check_redundancy(
+            "It happened at 7a.m. in the morning.") != []
