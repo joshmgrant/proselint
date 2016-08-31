@@ -1,13 +1,13 @@
-"""Tests for cursing.nfl check."""
+"""Tests for spelling.er_or check."""
 from __future__ import absolute_import
 
 from .check import Check
 
-from proselint.checks.cursing import nfl as chk
+from proselint.checks.spelling import er_or as chk
 
 
 class TestCheck(Check):
-    """The test class for cursing.nfl."""
+    """The test class for spelling.er_or."""
 
     __test__ = True
 
@@ -17,6 +17,6 @@ class TestCheck(Check):
         return chk
 
     def test_smoke(self):
-        """Basic smoke test for cursing.nfl."""
+        """Basic smoke test for spelling.er_or."""
         assert self.passes("""Smoke phrase with nothing flagged.""")
-        assert not self.passes("""The QB is named ball licker.""")
+        assert not self.passes("""She met with the invester.""")
