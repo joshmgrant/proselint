@@ -17,8 +17,11 @@ class TestCheck(Check):
         return chk
 
     def test_smoke_check_lowercase_periods(self):
-        """Basic smoke test for the function
+        """Basic smoke test.
+
+        This is for the function
         dates_times.am_pm.check_lowercase_periods.
+
         """
         assert chk.check_lowercase_periods(
             "Basic smoke phrase without issues.") == []
@@ -28,8 +31,11 @@ class TestCheck(Check):
             "It happened at 7 am.") != []
 
     def test_smoke_check_spacing(self):
-        """Basic smoke test for the function
+        """Basic smoke test.
+
+        This is for the function
         dates_times.am_pm.check_spacing.
+
         """
         assert chk.check_spacing(
             "Basic smoke phrase without issues.") == []
@@ -39,8 +45,11 @@ class TestCheck(Check):
             "It happened at 7a.m.") != []
 
     def test_smoke_check_midnight_noon(self):
-        """Basic smoke test for the function
+        """Basic smoke test.
+
+        This for the function
         dates_times.am_pm.midnight_noon.
+
         """
         assert chk.check_midnight_noon(
             "Basic smoke phrase without issues.") == []
@@ -50,8 +59,11 @@ class TestCheck(Check):
             "It happened at 12 a.m.") != []
 
     def test_smoke_check_redundancy(self):
-        """Basic smoke test for the function
+        """Basic smoke test.
+
+        This for the function
         dates_times.am_pm.check_redundancy.
+
         """
         assert chk.check_redundancy(
             "Basic smoke phrase without issues.") == []

@@ -35,4 +35,4 @@ class TestCheck(Check):
         assert chk.check_mental_telepathy(
             """Smoke phrase with nothing flagged.""") == []
         assert chk.check_mental_telepathy(
-            """I've been practicing mental telepathy.'""") != []
+            """I've been practicing mental telepathy.""") != []

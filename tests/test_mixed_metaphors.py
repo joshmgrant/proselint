@@ -29,4 +29,3 @@ class TestCheck(Check):
             """Smoke phrase with nothing flagged.""") == []
         assert chk.check_misc(
             """Writing tests is not rocket surgery.""") != []
-

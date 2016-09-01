@@ -30,6 +30,8 @@ To get this up and running, install it using pip: `pip install proselint`.
 - [x] [Vim](https://github.com/amperser/proselint/tree/master/plugins/vim) (thanks to [Matthias Bussonnier](https://github.com/Carreau))
 - [x] [Phabricator's `arc` CLI](https://github.com/google/arc-proselint) (thanks to [Jeff Verkoeyen](https://github.com/jverkoey))
 - [x] [Danger](https://github.com/dbgrandi/danger-prose) (thanks to [David Grandinetti](https://github.com/dbgrandi) and [Orta Therox](https://github.com/orta)) 
+- [x] [Visual Studio Code](https://github.com/ppeszko/vscode-proselint) (thanks to [Patryk Peszko](https://github.com/ppeszko))
+- [x] [coala](https://github.com/coala-analyzer/bear-docs/blob/master/docs/ProseLintBear.rst) (thanks to the [coala Development Group](https://github.com/coala-analyzer))  
 
 ### Usage
 
@@ -139,7 +141,7 @@ You can disable any of the checks by modifying `.proselintrc`.
 | `misc.latin` | Avoiding overuse of Latin phrases |
 | `misc.many_a` | Many a singular |
 | `misc.metaconcepts` | Avoiding overuse of metaconcepts |
-| `misc.narcisissm` | Talking about the subject, not its study |
+| `misc.narcissism` | Talking about the subject, not its study |
 | `misc.phrasal_adjectives` | Hyphenating phrasal adjectives |
 | `misc.preferred_forms` | Miscellaneous preferred forms |
 | `misc.pretension` | Avoiding being pretentious |
