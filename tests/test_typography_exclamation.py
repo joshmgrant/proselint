@@ -17,7 +17,7 @@ class TestCheck(Check):
         return chk
 
     def test_smoke_repeated_exclamations(self):
-        """Basic smoke test for 
+        """Basic smoke test for
         typography.exclamation.check_repeated_exclamations.
         """
         assert chk.check_repeated_exclamations(
@@ -26,7 +26,7 @@ class TestCheck(Check):
             """I'm really excited!!""") != []
 
     def test_smoke_exclamations_ppm(self):
-        """Basic smoke test for 
+        """Basic smoke test for
         typography.exclamation.check_exclamations_ppm.
         """
         assert chk.check_exclamations_ppm(
