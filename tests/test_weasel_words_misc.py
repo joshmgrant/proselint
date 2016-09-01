@@ -6,6 +6,7 @@ from .check import Check
 from proselint.checks.weasel_words import misc as chk
 from nose import SkipTest
 
+
 class TestCheck(Check):
     """The test class for weasel_words.misc."""
     raise SkipTest
